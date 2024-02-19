@@ -14,6 +14,9 @@ def home(title=None):
 def login(name=None):
     return render_template("base.html", name=name)
 
+@app.route("/register", method=["POST", "GET"])
+def register():
+    return "<h1>Rregister Form</h1>"
 
 @app.route("/test")
 def test():

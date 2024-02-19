@@ -1,4 +1,5 @@
 # envirements 
+.env 
 .venv/
 .venv
 .idea/
