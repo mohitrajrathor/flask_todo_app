@@ -11,7 +11,7 @@ from todo_app.db import get_db
 bp = Blueprint('auth', __name__, url_prefix="/auth")
 
 # handling registrations
-@bp.route("/auth/registration", methods=["POST", "GET"])
+@bp.route("/register", methods=["POST", "GET"])
 def register():
     if request.method == "POST":
         username = request.form['username']
@@ -39,7 +39,7 @@ def register():
 
         flash(error)
 
-        return render_template('auth/register.html')
+    return render_template('auth/register.html')
     
 
 # handle login process
@@ -51,7 +51,7 @@ def login():
         db = get_db()
         error = None
         user = db.execute(
-            'SELECT * FROM user WHERE username = ?', (username,)
+            'SELECT * FROM users WHERE username = ?', (username,)
         ).fetchone()
 
         if user is None:

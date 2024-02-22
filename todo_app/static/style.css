@@ -1,0 +1,31 @@
+
+
+nav { 
+    display: flex;
+    justify-content: space-between;
+    position: top;
+}
+
+.links {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+  }
+
+.links li {
+    display: inline-flex;
+    margin: 5px 10px 0px 0px;
+}
+
+.link {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    margin: 5px 0px 0px 10px;
+    font-size: 21px;
+}
+
