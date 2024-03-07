@@ -1,4 +1,181 @@
 
+/* rainbow line */
+.rainbow-line {
+    width: 100%; /* Adjust width as needed */
+    height: 2px; /* Adjust height as needed */
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 200% 100%; /* Adjust size for a smooth transition */
+    animation: rainbow 1.5s infinite linear; /* Adjust animation duration and timing function */
+  }
+  
+  @keyframes rainbow {
+    from { background-position: 0 0; }
+    to { background-position: -100% 0; }
+  }
+  
+
+
+/* main page code  */
+.plan-day {
+    text-align: center;
+    /* max-width: 800px; */
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+}
+
+.page-title {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bolder;
+    margin: 10px 0px 0px 20px;
+    font-size: 72px;
+    margin-top: 120px;
+    margin-bottom: 90px;
+}
+
+.page-links {
+    display: flex;
+    justify-content:space-around;
+}
+
+
+
+
+
+
+/* form style */
+
+.login-form {
+    width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #fff;  /* white background from image */
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);  /* shadow from image */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+  
+  .login-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;  /* color from image */
+    font-size: 24px;
+  }
+  
+  .login-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;  /* color from image */
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;  /* include padding in width */
+  }
+  
+  .login-form button {
+    background-color: #4CAF50;  /* color from image */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .register-now {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;  /* color from image */
+  }
+  
+  .register-now a {
+    color: #4CAF50;  /* same color from image */
+    text-decoration: none;
+  }
+
+/* links */
+
+
+a {
+    color: white; /* Set link color to white */
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* Position for pseudo-element */
+}
+
+/* Styling for link hover */
+a::before {
+    content: ''; /* Required for pseudo-element */
+    position: absolute; /* Position relative to the link */
+    bottom: 0; /* Align at the bottom */
+    left: 0; /* Start from the left */
+    width: 0; /* Initially, no width */
+    height: 2px; /* Height of the underline */
+    background-color: white; /* Color of the underline */
+    transition: width 0.3s ease; /* Smooth transition for width change */
+}
+
+a:hover::before {
+    width: 100%; /* Expand underline to 100% width on hover */
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 0;  
+    text-align: center;  
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right top, #bc006b, #b3037e, #a41792, #8e28a5, #6e37b6, #5a4ec8, #3e62d7, #0073e2, #0090ec, #00a7e4, #00bbd2, #00cbbe);
+    color: #ffffff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    min-height: 100%;
+}
+
+
+.head{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 42px;
+}
+
+.main-heading {
+    text-align: center;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+}
+
 
 nav { 
     display: flex;
@@ -9,23 +186,29 @@ nav {
 .links {
     list-style: none; /* Remove default list styles */
     padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
+    margin: 10px 10px 0 0; /* Remove margin */
+    text-decoration: none;
   }
 
 .links li {
     display: inline-flex;
-    margin: 5px 10px 0px 0px;
+    margin: 5px 20px 0px 0px;
 }
 
 .link {
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    padding: 5px;
+    color: skyblue;
 }
 
 .logo {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
     font-weight: bolder;
-    margin: 5px 0px 0px 10px;
-    font-size: 21px;
+    margin: 10px 0px 0px 20px;
+    font-size: 35px;
 }
 

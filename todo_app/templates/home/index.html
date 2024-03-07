@@ -1,8 +1,55 @@
+{% extends "base.html" %}
+
 {% block title %}Home{% endblock title %}
 
 {% block header %}
 
-<h1>Make Todo</h1>
+{% if g.user %}
+
+    <h1 class="main-heading">Make Todo</h1>
+
+{% else %}
+
+    <h1 class="main-heading">Login or Register to make Todos</h1>
+
+{% endif %}
 
 {% endblock header %}
+
+{% block content %}
+
+
+{% if g.user %}
+
+<div class="container">
+    <h1>To-Do List</h1>
+    <button>Logout</button>
+    <div class="input-container">
+        <input type="text" placeholder="Write todo here...">
+        <button>Add</button>
+    </div>
+    <div class="todos">
+        <h2>Past Todos</h2>
+        <div class="todo-item">
+            <input type="checkbox">
+            <label>Completed todo</label>
+        </div>
+    </div>
+</div>
+
+{% else %}
+
+<div class="plan-day">
+    <div class="rainbow-line"></div>
+    <h1 class="page-title">Start Planning Your day</h1>
+    <div class="rainbow-line"></div>
+    <ul class="page-links">
+        <a href="{{ url_for("auth.register") }}">Register</a>
+        <a href="{{ url_for("auth.login") }}">Login</a>
+    </ul>
+</div>
+
+{% endif %}
+
+{% endblock content %}
 
