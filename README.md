@@ -50,7 +50,7 @@ pip install -r requirements.txt
 
 2. Run the Flask application:
 ```bash
-flask run --app app.py
+flask --app todo_app run
 ```
 
 

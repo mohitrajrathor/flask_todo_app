@@ -1,4 +1,88 @@
 
+
+/* todo code */
+/* style.css */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #3399cc;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.todo-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#todo-text {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#add-todo {
+  padding: 10px 20px;
+  background-color: #3399cc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.todo-list {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+#todo-items {
+  list-style: none;
+  padding: 0;
+}
+
+#todo-items li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#todo-items li span {
+  font-size: 16px;
+}
+
+#todo-items li button {
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#todo-items li button:hover {
+  opacity: 0.7;
+}
+
+
+
+
 /* rainbow line */
 .rainbow-line {
     width: 100%; /* Adjust width as needed */
